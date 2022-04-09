@@ -7,6 +7,8 @@ export const Inventory = () => {
     pens: 40,
     inkpens: 15
   });
+  let Total = inv.books + inv.notebooks + inv.pens + inv.inkpens;
+  
     // Create add and remove functions here that changes the
     // state.
     const handlechange1 = (val) =>{
@@ -101,8 +103,8 @@ export const Inventory = () => {
         }}>-</button>
         <span>{inv.inkpens}</span>
       </div>
-            {/*calculate total and show it*/}
-      total: {0+inv.books+ inv.notebooks + inv.pens + inv.inkpens}
+            {   }
+      total: {Total}
     </div>
   );
 };
